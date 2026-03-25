@@ -10,21 +10,8 @@ export const metadata: Metadata = {
   description: 'Centralized AI-driven digital forensic investigation platform for processing, analyzing, and reporting forensic evidence.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/bcss.png',
+    apple: '/bcss.png',
   },
 }
 
