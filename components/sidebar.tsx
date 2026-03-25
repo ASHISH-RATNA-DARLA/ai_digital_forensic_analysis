@@ -70,14 +70,36 @@ export function Sidebar() {
   return (
     <aside className="w-64 bg-sidebar text-sidebar-foreground flex flex-col h-screen fixed left-0 top-0 overflow-y-auto">
       {/* Header */}
-      <div className="px-5 py-5 border-b border-sidebar-border">
-        <div className="flex items-center gap-2 mb-1">
-          <ShieldCheck className="h-6 w-6 text-sidebar-primary shrink-0" />
-          <span className="font-bold text-base leading-tight text-sidebar-foreground">
-            Digital Forensic
-          </span>
+      <div className="px-5 py-6 border-b border-sidebar-border space-y-4">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <ShieldCheck className="h-6 w-6 text-sidebar-primary shrink-0" />
+            <span className="font-bold text-base leading-tight text-sidebar-foreground">
+              Digital Forensic
+            </span>
+          </div>
+          <p className="text-xs text-sidebar-foreground/60 ml-8 mb-4">AI Analysis & Reporting System</p>
+
+          <div className="space-y-1 ml-8">
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-sidebar-foreground/40">
+              Powered by
+            </p>
+            <p className="text-[11px] font-medium text-sidebar-foreground/80">
+              Blue Cloud Softech Solutions
+            </p>
+            <p className="text-[10px] text-sidebar-foreground/40 leading-relaxed">
+              Secure Government Platform<br />All access is logged and audited.
+            </p>
+          </div>
         </div>
-        <p className="text-xs text-sidebar-foreground/60 ml-8">AI Analysis & Reporting System</p>
+
+        <div className="bg-white p-2 rounded-lg flex justify-center items-center shadow-md mx-2 min-h-[100px]">
+          <img
+            src="/bcss.png"
+            alt="BCSS – Blue Cloud Softech Solutions"
+            className="h-24 w-auto object-contain"
+          />
+        </div>
       </div>
 
       {/* Nav */}
@@ -110,21 +132,10 @@ export function Sidebar() {
         ))}
       </nav>
 
-      {/* Footer */}
-      <div className="px-5 py-4 border-t border-sidebar-border space-y-3">
-        {/* BCSS Branding */}
-        <div className="flex flex-col items-center gap-1.5">
-          <p className="text-[9px] font-semibold uppercase tracking-widest text-sidebar-foreground/40">
-            Powered by
-          </p>
-          <img
-            src="/bcss.png"
-            alt="BCSS – Blue Cloud Softech Solutions"
-            className="h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-          />
-        </div>
-        <p className="text-[10px] text-sidebar-foreground/40 leading-relaxed text-center">
-          Secure Government Platform<br />All access is logged and audited.
+      {/* Footer - Simplified or Removed */}
+      <div className="px-5 py-4 border-t border-sidebar-border">
+        <p className="text-[10px] text-sidebar-foreground/20 text-center">
+          v1.0.0-production
         </p>
       </div>
     </aside>
